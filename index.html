@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi cumpleaños</title>
+    <title>¡Alexander cumple 22! - Gran Fiesta de Cumpleaños</title>
+    <!-- Vinculamos el archivo CSS externo -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>¡mi cumple!</h1>
+
+    <!-- Fondo espacial con orbes animados -->
+    <div class="universe">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="container">
+        <!-- Hero / Encabezado -->
+        <header>
+            <div class="badge">Edición Exclusiva • 22 Años</div>
+            <h1>Cumpleaños de <br><span class="name">Alexander</span></h1>
+            <p class="subtitle">Prepárate para una noche épica llena de buena música, cócteles increíbles y los mejores momentos para celebrar juntos.</p>
+            <a href="#detalles" class="cta-btn">Ver Detalles del Evento</a>
+        </header>
+
+        <!-- Sección de Detalles del Evento -->
+        <section id="detalles">
+            <h2 class="section-title">Coordenadas de la <span>Fiesta</span></h2>
+            
+            <div class="grid-info">
+                <div class="card">
+                    <div class="card-icon">📅</div>
+                    <h3>Fecha</h3>
+                    <p>Sábado, 25 de Octubre<br>Recepción: 9:00 PM</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📍</div>
+                    <h3>Ubicación</h3>
+                    <p>Skyline Lounge Club<br>Av. Las Américas #422, Piso 12</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🍸</div>
+                    <h3>Temática & Barra</h3>
+                    <p>Barra libre abierta toda la noche y sorpresas visuales imperdibles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caja de Destacado / Dresscode -->
+        <div class="highlight-box">
+            <h3>Dress Code: Black & Neon / Elegante</h3>
+            <p>Queremos verte increíble. Saca tu mejor outfit en tonos oscuros con detalles o accesorios que brillen en la noche. ¡Haz que tu estilo marque la diferencia!</p>
+        </div>
+
+        <!-- Sección RSVP (Confirmación de Asistencia interactiva por CSS) -->
+        <section class="rsvp-section">
+            <h2 class="section-title" style="margin-bottom: 30px; font-size: 1.8rem;">¿Nos Acompañas?</h2>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Tu Nombre y Apellido</label>
+                    <input type="text" id="nombre" class="form-control" placeholder="Ej. Sofía Martínez" required>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Asistirás al evento?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="asistire" name="asistencia" value="si" checked>
+                            <label for="asistire">¡Sí, ahí estaré! 🔥</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="no_asistire" name="asistencia" value="no">
+                            <label for="no_asistire">Lo siento, me lo pierdo 😢</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cancion">¿Qué canción te encendería la pista?</label>
+                    <input type="text" id="cancion" class="form-control" placeholder="Artista y Tema favorito">
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Confirmación</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Creado con estilo y exclusividad para los <span>22 de Alexander</span>. ¡Nos vemos en la pista!</p>
+        </footer>
+    </div>
+
 </body>
 </html>
