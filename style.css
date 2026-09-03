@@ -274,7 +274,7 @@ h1 span.name {
     font-weight: 400;
 }
 
-/* Sección de Confirmación (RSVP) Pura CSS Interactiva */
+/* Sección de Confirmación (RSVP) */
 .rsvp-section {
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -320,7 +320,6 @@ h1 span.name {
     background: rgba(8, 7, 11, 0.9);
 }
 
-/* Checkbox estilizado sin JS */
 .radio-group {
     display: flex;
     gap: 20px;
@@ -360,7 +359,7 @@ h1 span.name {
 
 .submit-btn {
     width: 100%;
-    background: linear-gradient(135deg, var(--secondary), #0077b6);
+    background: linear-gradient(135deg, #25d366, #128c7e);
     color: #fff;
     border: none;
     padding: 16px;
@@ -371,12 +370,12 @@ h1 span.name {
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 0 20px rgba(5, 217, 232, 0.3);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.3);
 }
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 30px rgba(5, 217, 232, 0.6);
+    box-shadow: 0 0 30px rgba(37, 211, 102, 0.6);
 }
 
 /* Footer */

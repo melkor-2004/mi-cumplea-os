@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -59,25 +59,25 @@
             <p>Queremos verte increíble. Saca tu mejor outfit en tonos oscuros con detalles o accesorios que brillen en la noche. ¡Haz que tu estilo marque la diferencia!</p>
         </div>
 
-        <!-- Sección RSVP (Confirmación de Asistencia interactiva por CSS) -->
+        <!-- Sección RSVP -->
         <section class="rsvp-section">
             <h2 class="section-title" style="margin-bottom: 30px; font-size: 1.8rem;">¿Nos Acompañas?</h2>
             
-            <form action="#" method="POST">
+            <form id="rsvpForm">
                 <div class="form-group">
                     <label for="nombre">Tu Nombre y Apellido</label>
-                    <input type="text" id="nombre" class="form-control" placeholder="Ej. Sofía Martínez" required>
+                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej. Sofía Martínez" required>
                 </div>
 
                 <div class="form-group">
                     <label>¿Asistirás al evento?</label>
                     <div class="radio-group">
                         <div class="radio-option">
-                            <input type="radio" id="asistire" name="asistencia" value="si" checked>
+                            <input type="radio" id="asistire" name="asistencia" value="¡Sí, ahí estaré! 🔥" checked>
                             <label for="asistire">¡Sí, ahí estaré! 🔥</label>
                         </div>
                         <div class="radio-option">
-                            <input type="radio" id="no_asistire" name="asistencia" value="no">
+                            <input type="radio" id="no_asistire" name="asistencia" value="Lo siento, me lo pierdo 😢">
                             <label for="no_asistire">Lo siento, me lo pierdo 😢</label>
                         </div>
                     </div>
@@ -85,10 +85,10 @@
 
                 <div class="form-group">
                     <label for="cancion">¿Qué canción te encendería la pista?</label>
-                    <input type="text" id="cancion" class="form-control" placeholder="Artista y Tema favorito">
+                    <input type="text" id="cancion" name="cancion" class="form-control" placeholder="Artista y Tema favorito">
                 </div>
 
-                <button type="submit" class="submit-btn">Enviar Confirmación</button>
+                <button type="submit" class="submit-btn">Enviar Confirmación por WhatsApp</button>
             </form>
         </section>
 
@@ -98,5 +98,7 @@
         </footer>
     </div>
 
+    <!-- Archivo de JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
